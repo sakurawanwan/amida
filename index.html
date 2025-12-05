@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スーパードキドキ！あみだくじ抽選</title>
+    <link rel="stylesheet" href="amida.css">
+</head>
+<body>
+    <h1>スーパードキドキ！あみだくじ抽選</h1>
+
+    <div id="setup-area">
+        <h2>参加者名を入力してください (12名)</h2>
+        <div id="input-container">
+            </div>
+        <button id="start-button">あみだくじスタート！</button>
+    </div>
+
+    <div id="game-area" style="display: none;">
+        <div id="start-labels">
+            </div>
+        <canvas id="amida-canvas" width="900" height="600"></canvas>
+        <div id="end-labels">
+            </div>
+    </div>
+
+    <div id="final-result-display" style="display: none;">
+        <h2>最終結果発表！</h2>
+        <ul id="result-list">
+            </ul>
+        <button id="reset-button">もう一度遊ぶ</button>
+    </div>
+
+    <script src="amida.js"></script>
+</body>
+</html>
